@@ -1,0 +1,17 @@
+streamlit
+openpyxl
+pypdfium2
+pillow
+# plus whichever package you use to call Surya / Datalab
+
+
+The Streamlit version is back as app.py, pipeline.py and requirements.txt, in a new survey_app_streamlit folder. 
+
+pipeline.py is identical to the one in the React version’s backend, so any changes to the parsing or Excel output carry over either way.
+
+To run it:
+
+pip install -r requirements.txt
+streamlit run app.py
+
+You still need to fill in ocr_pages_to_markdown() in pipeline.py with your Surya call. Until then, clicking Process shows an “OCR not wired up yet” message in the app.
